@@ -18,6 +18,7 @@ if ($Path -ne "") {
     $src = $Path
 } else {
     $found = Get-ChildItem -Path $SEARCH_ROOT -Recurse -Filter "dashboard_*.html" -ErrorAction SilentlyContinue |
+             Where-Object { $_.FullName -notlike "*\.ipynb_checkpoints\*" } |
              Sort-Object LastWriteTime -Descending |
              Select-Object -First 1
 
