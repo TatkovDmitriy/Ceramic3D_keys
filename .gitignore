@@ -1,0 +1,7 @@
+*.csv
+*.xlsx
+*.ipynb
+__pycache__/
+*.py
+.ipynb_checkpoints/
+password.json
