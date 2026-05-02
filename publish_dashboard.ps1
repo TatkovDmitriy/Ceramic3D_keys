@@ -1,4 +1,4 @@
-# publish_dashboard.ps1
+﻿# publish_dashboard.ps1
 # Копирует последний сгенерированный дашборд в репозиторий и публикует на GitHub Pages.
 #
 # Использование:
